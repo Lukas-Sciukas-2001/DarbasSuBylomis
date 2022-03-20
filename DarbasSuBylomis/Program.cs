@@ -4,8 +4,11 @@
     {
         static void Main(string[] args)
         {
-            failuKlase obj = new failuKlase(10);
-            obj.kurti();
+            failuKlase obj = new failuKlase(10,"Bylos");
+            //obj.kurti();
+            //obj.ataskaita();
+            obj.trinti();
         }
+
     }
 }
