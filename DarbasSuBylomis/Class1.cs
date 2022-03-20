@@ -23,6 +23,7 @@ namespace DarbasSuBylomis
             string data;
             string naujasfailName;
             arteising = false;
+            //Sukuriamas norimas katalogas, kad butu imanoma sukurti ir skaityti is jo failus
             Directory.CreateDirectory(vieta);
             for (int x = 1; x <= kiek; x++)
             {
@@ -63,6 +64,8 @@ namespace DarbasSuBylomis
             int Kiekvienetu = 0;
             string ataskaitospavadinimas = "Ataskaita.txt";
             string tekstas;
+            //Surandami visi failai is norimo katalogo
+            //Directory.GetFiles grazina pilna kelia ir failo pavadinima
             string[] failai = Directory.GetFiles(vieta, "*.txt");
             foreach( string i in failai)
             {
